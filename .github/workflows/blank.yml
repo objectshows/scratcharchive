@@ -30,10 +30,7 @@ jobs:
         run: pip install scratchattach
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pip install os
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
         run: pip install github
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: python3 scratchcrawler.py
+        run: python scratchcrawler.py
