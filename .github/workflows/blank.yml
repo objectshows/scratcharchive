@@ -33,4 +33,7 @@ jobs:
         run: pip install os
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: pip install Github
+        run: pip install github
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: python3 scratchcrawler.py
