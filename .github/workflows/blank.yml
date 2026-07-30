@@ -32,5 +32,5 @@ jobs:
       - name: Run a one-line script
         run: pip install github
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: START THE FLIPPING SCRIPT
         run: python scratchcrawler.py
