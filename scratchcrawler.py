@@ -36,7 +36,7 @@ FINALE = crawler(times, "Wign199")
 # Retrieved 2026-06-05, License - CC BY-SA 4.0
 print("All Done!")
 repo.create_file(
-    path=/data/crawler.txt,
+    path=/data/crawler.txt
     message="the scratch archive list",
     content="\n".join(str(item) for item in FINALE)
 )
