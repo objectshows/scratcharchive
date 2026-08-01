@@ -15,7 +15,7 @@ crawled.then(result => {
   const lines = abacaba.split(/\r?\n/);
 gream = Url.replace('?user=', '')
 gream = gream.toString()
-if (lines.includes(gream + \n)) {
+if (lines.includes(gream + /n)) {
     document.getElementById("ab").innerHTML = gream
     document.getElementById("fyi").innerHTML = "Creation Date:" + lines[lines.indexOf(gream) + 1]
 } else {
