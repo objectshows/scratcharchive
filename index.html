@@ -12,13 +12,13 @@ let fetched = await fetch(url);
 const crawled = fetched.text()
 crawled.then((result) => {
   abacaba = result
-});
 gream = Url.replace('?user=', '')
 gream = gream.toString()
 if (abacaba.includes(gream)) {
     document.getElementbyId("ab").innerHTML = gream
 } else {
     document.getElementbyId("ab").innerHTML = "Account not found in dataset"
+}
 }
 }
 startup()
