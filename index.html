@@ -8,7 +8,8 @@
 const Url = window.location.search
 const url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
 const fetched = await fetch(url);
-const crawled = fetched.text()
+const fetched2 = fetched.json()
+const crawled = fetched2.text()
 crawled.then((result) => {
   abacaba = result
 });
