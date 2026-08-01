@@ -7,10 +7,7 @@
 <script>
 const Url = window.location.search
 const url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
-(async function fetchData() {
-  let fetched = await fetch(url);
-})();
-fetchData()
+let fetched = fetch(url);
 const fetched2 = fetched.json()
 const crawled = fetched2.text()
 crawled.then((result) => {
