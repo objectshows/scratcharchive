@@ -12,11 +12,12 @@ let fetched = await fetch(url);
 const crawled = fetched.text()
 crawled.then(result => {
   abacaba = result
+  const lines = abacaba.split(/\r?\n/);
 gream = Url.replace('?user=', '')
 gream = gream.toString()
 if (abacaba.includes(gream)) {
     document.getElementById("ab").innerHTML = gream
-    document.getElementById("fyi").innerHTML = "Creation Date:" + abacaba[abacaba.indexOf(gream) + 1]
+    document.getElementById("fyi").innerHTML = "Creation Date:" + lines[lines.indexOf(gream) + 1]
 } else {
     document.getElementById("ab").innerHTML = "Account not found in dataset"
 }
