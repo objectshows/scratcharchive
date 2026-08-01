@@ -10,7 +10,7 @@ async function startup() {
 const url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
 let fetched = await fetch(url);
 const crawled = fetched.text()
-crawled.then((result) => {
+crawled.then(result => {
   abacaba = result
 gream = Url.replace('?user=', '')
 gream = gream.toString()
