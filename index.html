@@ -12,10 +12,12 @@ let fetched = await fetch(url);
 const crawled = fetched.text()
 crawled.then(result => {
   abacaba = result
+  abacabajson = abacaba.json()
 gream = Url.replace('?user=', '')
 gream = gream.toString()
 if (abacaba.includes(gream)) {
     document.getElementById("ab").innerHTML = gream
+    document.getElementById("fyi").innerHTML = "Creation Date:" + a[a.indexOf(gream) + 1]
 } else {
     document.getElementById("ab").innerHTML = "Account not found in dataset"
 }
@@ -46,6 +48,7 @@ body{
 }
 </style>
 <h1 id="ab">Wign199</h1>
+<p id="fyi">Creation Date:</p>
 <p>"You guys want tacos?"<p>
 <h2>Projects:</h2>
 <img src="https://cdn2.scratch.mit.edu/get_image/project/1363083020_480x360.png" alt="tedt">
