@@ -6,9 +6,9 @@
 <body>
 <script>
 const Url = window.location.search
-let url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
-let fetched = await fetch(url);
-let crawled = fetched.text()
+const url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
+const fetched = await fetch(url);
+const crawled = fetched.text()
 crawled.then((result) => {
   abacaba = result
 });
