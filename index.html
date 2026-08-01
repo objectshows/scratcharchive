@@ -9,7 +9,6 @@ const Url = window.location.search
 async function startup() {
 const url = "https://objectshows.github.io/scratcharchive/fulldata.txt"
 let fetched = await fetch(url);
-const fetched2 = fetched.json()
 const crawled = fetched2.text()
 crawled.then((result) => {
   abacaba = result
